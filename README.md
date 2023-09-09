@@ -12,6 +12,11 @@ Eclipse 2023-06 、MySQL 8.0.34
 使用Eclipse做專案建置，選擇new新建dynamic web project，專案名右鍵選擇configure convert to maven project，將pom.xml檔案的dependecies 複製到專案裡的pom.xml
 ![pom](https://github.com/YenYasir/EIPulse/assets/133478155/02e7be59-4547-4450-98cb-a7d20d314f2e)
 
+將src資料夾內的檔案，複製至新專案相同位置，選擇 overwrite all
+設定tomcat ，選擇 server，選apache ->　10.1 -> next ，browse >選擇tomcat 10.1.13資料夾 ，finish 
+
+啟動server 
+
 
 ## 功能設計
  - [x] 登入介面
