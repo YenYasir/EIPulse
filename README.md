@@ -29,3 +29,8 @@ Eclipse 2023-06 、MySQL 8.0.34
 分支名：wang
 更新日期：112/9/9
 更新事項：修改三個JSP版面及三個CSS(login、index、loginerror)
+
+分支名：Jia
+更新日期：112/9/9
+更新事項：修改三個JSP版面及三個CSS(forgotpwd、newpwd、enterotp)
+
