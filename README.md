@@ -26,3 +26,6 @@ Eclipse 2023-06 、MySQL 8.0.34
  - [x] 登出
 
 ## 更新日誌
+分支名：wang
+更新日期：112/9/9
+更新事項：修改三個JSP版面及三個CSS(login、index、loginerror)
