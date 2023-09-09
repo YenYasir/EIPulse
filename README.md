@@ -7,6 +7,12 @@ jse17 、tomcat 10.1.3、servlet 5.0 、mysql、maven3.9.4 、hibernate6.2.7
 Eclipse 2023-06 、MySQL 8.0.34
 ## 雲端環境
 ## 專案檔建置說明
+1. src.zip   專案檔案
+2. pom.xml   maven 環境建置檔
+使用Eclipse做專案建置，選擇new新建dynamic web project，專案名右鍵選擇configure convert to maven project，將pom.xml檔案的dependecies 複製到專案裡的pom.xml
+![pom](https://github.com/YenYasir/EIPulse/assets/133478155/02e7be59-4547-4450-98cb-a7d20d314f2e)
+
+
 ## 功能設計
  - [x] 登入介面
  - [x] 修改密碼
