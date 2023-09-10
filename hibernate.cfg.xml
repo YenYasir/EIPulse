@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.datasource">java:/comp/env/connectMySQLJDBC/server</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+
+    <property name="hibernate.current_session_context_class">thread</property>
+
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.format_sql">true</property>
+
+		<mapping class="com.eipulse.bean.Login"/>
+		<mapping class="com.eipulse.bean.Emergency"/>
+		<mapping class="com.eipulse.bean.Employee"/>
+		<mapping class="com.eipulse.bean.Contact"/>
+		<mapping class="com.eipulse.bean.Dept"/>
+		<mapping class="com.eipulse.bean.EmployeeInfo"/>
+		<mapping class="com.eipulse.bean.Permission"/>
+		<mapping class="com.eipulse.bean.Title"/>
+  </session-factory>
+</hibernate-configuration>
