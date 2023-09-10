@@ -1,0 +1,41 @@
+      *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .div1 {
+            width: 100%;
+            border: 2px double black;
+            margin: auto;
+        }
+        input{
+            font-size: 20px;
+            font-family: "Microsoft Sans Serif";
+            text-align: center;
+            border: none;
+            background-color: transparent;
+            width: 100%;
+        }
+        .submit1{
+            margin: auto;
+            background-color: gray;
+            width: 30%;
+        }
+        button{
+            font-size: 20px;
+            font-family: "Microsoft Sans Serif";
+            text-align: center;
+            margin: auto;
+            background-color: transparent;
+            width: 31%;
+        }
+        .updatetable{
+			border: 2px solid black;
+		}
+		.empPhoto{
+			width: 100px;
+			height: 80px;
+		}
+		td{
+			text-align: center;
+		}
+	
