@@ -32,7 +32,7 @@
 			<tbody>
 				<c:forEach items="${emps}" var="emp">
 					<tr>
-						<td class="tdcss" onclick="ck()">${emp.empId}</td>
+						<td><a href="selectperemp?id=${emp.empId}">${emp.empId}</a></td>
 						<td>${emp.empName}</td>
 						<td>${emp.employeeInfo.dept.deptName}</td>
 						<td>${emp.employeeInfo.title.titleName}</td>
@@ -44,7 +44,7 @@
 	<script>
 		let table = $('#datatable').DataTable();
 		function select() {
-			location.href = "PermissionEmp";
+			location.href = "permissionEmp";
 		}
 		function update() {
 			alert('還沒有這個功能');
@@ -53,7 +53,7 @@
 			alert('還沒有這個功能');
 		}
 		function ck() {
-			
+			location.href = "test";
 		}
 
 		function up() {

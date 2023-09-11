@@ -31,7 +31,7 @@ if (session.getAttribute("EmpId") == null) {
 			<img src="../img/backgrou.jpg">
 		</iframe>
 	</div>
-	<div class="down">	
+	<div class="down">
 		<p class="downtext">版權聲明&nbsp©&nbspEIPULSE</p>
 	</div>
 	<div>

@@ -54,7 +54,15 @@ public class Loginservlet extends HttpServlet {
 			}
 			case 2:{
 				session.setAttribute("selectEmp", 1);
+				break;
 			}
+			case 3:{
+				session.setAttribute("selectperEmp", 1);
+				break;
+			}
+//			case 4:{
+//				session.setAttribute("selectEmp", 1);
+//			}
 			default:
 				break;
 			}
