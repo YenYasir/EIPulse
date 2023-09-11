@@ -61,7 +61,7 @@
 						手機：<input type="tel" pattern="[0-9]{10}"
 						placeholder="請輸入手機號碼" title="請輸入有效長度，-不需輸入" required id="phone" name="phone" />
 					<p>
-						電話：<input type="tel" pattern="[0-9]{10}" placeholder="市話選填"
+						電話：<input type="tel" pattern="[0-9]{9,10}" placeholder="市話選填"
 						title="請輸入有效長度，-不需輸入" id="tel" name="tel" />
 					<p>
 						地址：<input type="text" pattern="^[\u4e00-\u9fff0-9]+$"

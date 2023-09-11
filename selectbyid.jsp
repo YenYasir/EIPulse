@@ -71,7 +71,7 @@
 				</tr>
 				<tr>
 					<td>電話:</td>
-					<td><input type="tel" pattern="[0-9]{10}" placeholder="市話選填"
+					<td><input type="tel" pattern="[0-9]{9,10}" placeholder="市話選填"
 						title="請輸入有效長度，-不需輸入" readonly="readonly"
 						value="${emp.contact.tel}" name="tel"></td>
 				</tr>
@@ -84,10 +84,10 @@
 				<tr>
 					<td>信箱:</td>
 					<td><input type="email"
-						pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+						pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
 						placeholder="請輸入電子信箱" title="請輸入有效格式，例:a123@gmail.com"
 						readonly="readonly" value="${emp.contact.email}" name="email"
-						required></td>
+						required><datalist><option value="@gmail.com"/><option value="@yahoo.com.tw"/></datalist> </td>
 				</tr>
 				<input type="hidden" name="emergencyCount"
 					value="${emp.emergencies.size()}">
