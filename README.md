@@ -45,3 +45,7 @@ Eclipse 2023-06 、MySQL 8.0.34
 分支名：YanYu
 更新日期：112/9/11
 更新事項：更新insert ,selectbyid .jsp 表單驗證
+
+分支名：develop
+更新日期：112/9/11
+更新事項：新增修改權限功能(0911-22-20 src.zip)
