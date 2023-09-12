@@ -27,10 +27,10 @@ public class NewPassword extends HttpServlet {
   String NewPwdCk = request.getParameter("NewPwdCk");
   RequestDispatcher dispatcher = null;
   if (NewPwd != null && NewPwdCk != null && NewPwd.equals(NewPwdCk)) {
-   Login nelogin = new Login();
-   nelogin.setEmpId((int)session.getAttribute("emailcon"));
-   nelogin.setPassWord(NewPwd);
-   Login uplogin = session1.merge(nelogin);
+   Login newlogin = new Login();
+   newlogin.setEmpId((int)session.getAttribute("emailcon"));
+   newlogin.setPassWord(NewPwd);
+   Login uplogin = session1.merge(newlogin);
    if(uplogin!=null) {
     request.setAttribute("status", "resetSuccess");
    }else

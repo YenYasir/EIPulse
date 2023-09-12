@@ -71,7 +71,7 @@
 				</tr>
 				<tr>
 					<td>電話:</td>
-					<td><input type="tel" pattern="[0-9]{10}" placeholder="市話選填"
+					<td><input type="tel" pattern="[0-9]{9,10}" placeholder="市話選填"
 						title="請輸入有效長度，-不需輸入" readonly="readonly"
 						value="${emp.contact.tel}" name="tel"></td>
 				</tr>

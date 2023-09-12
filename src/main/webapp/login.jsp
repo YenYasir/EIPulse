@@ -10,12 +10,13 @@
 </head>
 <body>
 <div class="topBar"><img src="img/toplogo.png" class="toplogo"/></div>
+
 <div class="loginform">
     <form action="login" method="post">
         <div class="login">
             <h4 class="toptext">登入介面</h4>
-            <div class="EmpId">員工代號：<input type="text" class="EmpIdInput" name="EmpId" id="EmpId" required value="1000"></div>
-            <div class="PassWord">密碼：<input type="password" class="PassWordInput" name="PassWord" id="PassWord"  placeholder="預設西元生日末6碼" required value="100"></div>
+            <div class="EmpId">員工代號：<input type="text" class="EmpIdInput" name="EmpId" id="EmpId" ></div>
+            <div class="PassWord">密碼：<input type="password" class="PassWordInput" name="PassWord" id="PassWord"  placeholder="預設西元生日末6碼"></div>
             <br>
             <br>
             <button type="submit" class="loginbtn">登入</button>
@@ -26,9 +27,10 @@
         <br>${err}
     </div>
 </div>
-<div class="down"><p>版權聲明©EIPULSE</p></div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" ></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"></script>
+	<div class="down">
+		<p class="downtext">版權聲明&nbsp©&nbspEIPULSE</p>
+	</div>
+
+
 </body>
 </html>
