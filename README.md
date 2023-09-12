@@ -49,3 +49,6 @@ Eclipse 2023-06 、MySQL 8.0.34
 分支名：develop
 更新日期：112/9/11
 更新事項：新增修改權限功能(0911-22-20 src.zip)
+(請在資料庫新增一些資料
+1.Permission資料表新增一個權限3
+2.EmployeePermission資料表替一個員工給予權限3的功能)
