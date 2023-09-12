@@ -1,0 +1,203 @@
+.container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.container .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1920px;
+  height: 1779px;
+  position: relative;
+}
+
+.container .HeadBar {
+  position: absolute;
+  width: 1935px;
+  height: 132px;
+  top: 1648px;
+  left: -15px;
+  background-color: #d9d9d9;
+}
+
+.container .view {
+  position: absolute;
+  width: 1931px;
+  height: 219px;
+  top: -17px;
+  left: -15px;
+}
+
+.container .header-wrapper {
+  height: 219px;
+}
+
+.container .header-group {
+  position: relative;
+  width: 1916px;
+  height: 202px;
+  top: 17px;
+  left: 15px;
+}
+
+.container .logoview {
+  position: absolute;
+  width: 1916px;
+  height: 201px;
+  top: 1px;
+  left: 0;
+  background-color: #000000;
+  border-radius: 0px 0px 50px 50px;
+}
+
+.container .logo {
+  position: absolute;
+  width: 265px;
+  height: 181px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.container .loginform {
+  position: absolute;
+  width: 1814px;
+  height: 1320px;
+  top: 267px;
+  left: 46px;
+}
+
+.container .login {
+  position: relative;
+  width: 1804px;
+  height: 1320px;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.container .div-wrapper {
+  position: absolute;
+  width: 1804px;
+  height: 189px;
+  top: 5px;
+  left: 0;
+  background-color: #241d1d;
+}
+
+.container .text-wrapper {
+  top: 55px;
+  left: 842px;
+  color: #ffffff;
+  font-size: 80px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.container .EmpId {
+  top: 445px;
+  left: 194px;
+  color: #000000;
+  font-size: 60px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.container .PassWord {
+  top: 646px;
+  left: 194px;
+  color: #000000;
+  font-size: 60px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.container .EmpIdInput{
+  position: absolute;
+  width: 748px;
+  height: 96px;
+  top: 421px;
+  left: 602px;
+  font-size:80px ;
+  background-color: #f4eded;
+}
+
+.container .PassWordInput {
+  position: absolute;
+  width: 748px;
+  height: 96px;
+  top: 622px;
+  left: 602px;
+  font-size:80px ;
+  background-color: #f3eded;
+}
+.container .error{
+	color:red;
+	font-size: 15px;
+	height: 15px;
+}
+.container .form-text{
+  position: absolute;
+  width: 748px;
+  height: 96px;
+  top: 622px;
+  left: 602px;
+  font-size:80px ;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.container .loginbtn {
+  position: absolute;
+  width: 290px;
+  height: 118px;
+  top: 937px;
+  left: 808px;
+  background-color: #100f09;
+	color: #ffffff;
+	font-size: 80px;
+	cursor: pointer;	
+}
+.container .loginbtn:Hover{
+	color:yellow;
+}
+.container .changepwd {
+  width: 359px;
+  top: 964px;
+  left: 297px;
+  color: #000000;
+  font-size: 60px;
+  position: absolute;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.container .hint-text-wrapper {
+  width: 1488px;
+  top: 264px;
+  left: 197px;
+  color: rgb(255, 0, 0);
+  font-size: 80px;
+  position: absolute;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}

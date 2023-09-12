@@ -34,3 +34,18 @@ Eclipse 2023-06 、MySQL 8.0.34
 更新日期：112/9/9
 更新事項：修改三個JSP版面及三個CSS(forgotpwd、newpwd、enterotp)
 
+分支名：wang
+更新日期：112/9/10
+更新事項：更新員工新增畫面，將上下捲動修改為下一頁顯示(insertemp.jsp、insertemp.css)
+
+分支名：develop
+更新日期：112/9/10
+更新事項：更新Bean與加上映君&彥宇&懿珈的更新(0910-23-30 src.zip)
+
+分支名：YanYu
+更新日期：112/9/11
+更新事項：更新insert ,selectbyid .jsp 表單驗證
+
+分支名：develop
+更新日期：112/9/11
+更新事項：新增修改權限功能(0911-22-20 src.zip)
