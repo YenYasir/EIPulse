@@ -4,11 +4,9 @@
 		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 	<session-factory>
-		  <property name="hibernate.connection.datasource">java:/comp/env/connectMySQLJDBC/server</property>
-  		  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-        <!--  
-        <property name="hibernate.connection.datasource">java:comp/env/connectSQLServerJdbc/SystemService</property>
-		<property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>-->
+
+        <property name="hibernate.connection.datasource">java:/comp/env/connectMySQLJDBC/server</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="hibernate.current_session_context_class">thread</property>
 		
 		<property name="hibernate.show_sql">true</property>

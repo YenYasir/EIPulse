@@ -13,7 +13,7 @@
     <form id="editForm" method="post" action="SelectAllEmp" enctype="multipart/form-data">
         <table id="datatable" class="display">
             <thead>
-            
+      
             <tr>
                 <th colspan="2" class="title">員工資料
                <input type="hidden"  readonly value="${emp.photo}" name="photo"></th>

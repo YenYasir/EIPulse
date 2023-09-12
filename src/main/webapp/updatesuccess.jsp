@@ -11,13 +11,9 @@
 <body>
 <div class="div1">
     <form id="editForm" method="post" action="SelectAllEmp" enctype="multipart/form-data">
-
-      
-   
         <table id="datatable" class="display">
-             
             <thead>
-    <%--        <tr>
+            <tr>
                 <input type="submit" value="返回"/>
             </tr>--%> 
             <tr>

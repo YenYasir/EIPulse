@@ -50,10 +50,10 @@ if (session.getAttribute("EmpId") == null) {
 						<li><a href="javascript:void(0)" id="insert">新增員工</a></li>
 					</c:if>
 					<c:if test="${sessionScope.selectEmp == 1}">
-						<li><a href="javascript:void(0)" id="serach">查詢員工</a></li>
+						<li><a href="javascript:void(0)" id="search">查詢員工</a></li>
 					</c:if>
 					<c:if test="${sessionScope.selectperEmp == 1}">
-						<li><a href="javascript:void(0)" id="serachper">查詢員工權限</a></li>
+						<li><a href="javascript:void(0)" id="searchper">查詢員工權限</a></li>
 					</c:if>
 					<c:if test="${sessionScope.updateperEmp == 1}">
 						<li><a href="javascript:void(0)" id="updateper">調整員工權限</a></li>
@@ -89,9 +89,9 @@ if (session.getAttribute("EmpId") == null) {
 								document.querySelector(".iframe1").style.display = "block";
 							});
 		};
-		if (document.getElementById("serach") != null) {
+		if (document.getElementById("search") != null) {
 			document
-					.getElementById('serach')
+					.getElementById('search')
 					.addEventListener(
 							'click',
 							function() {
@@ -99,14 +99,14 @@ if (session.getAttribute("EmpId") == null) {
 								document.querySelector("iframe").src = "SelectAllEmp"
 							});
 		};
-		if (document.getElementById("serach") != null) {
+		if (document.getElementById("searchper") != null) {
 			document
-					.getElementById('serach')
+					.getElementById('searchper')
 					.addEventListener(
 							'click',
 							function() {
 								document.querySelector(".iframe1").style.display = "block";
-								document.querySelector("iframe").src = "SelectAllEmp"
+								document.querySelector("iframe").src = "permissionEmp"
 							});
 		};
 	</script>

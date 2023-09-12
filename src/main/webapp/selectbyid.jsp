@@ -18,36 +18,34 @@
 			<table id="datatable" class="display">
 				<thead>
 					<tr>
-						<th colspan="2" class="title">員工資料</th></tr>
-						
-						<tr><th class="photofile">大頭照</th>
-							<th><img
+						<th>員工資料</th>
+						<th class="photofile"><img
 							src="data:image/jpg;base64,${base64Picture}" alt="圖片"
 							class="empPhoto"> <input type="file"  name="photo"
-							id="inputPhoto" style="display: none;font-size:12px"></th>
-						</tr>
+							id="inputPhoto" style="display: none;"></th>
+					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td >員工編號</td>
+						<td >員工編號:</td>
 						<td><input type="text" disabled="disabled"
 							value="${emp.empId}" name="id"></td>
 					</tr>
 					<tr>
-						<td>身分證字號</td>
+						<td>身分證字號:</td>
 						<td><input type="text" pattern="^[A-Z][0-9]{9}$"
 							placeholder="請輸入身分證字號" title="請輸入有效身分證格式" readonly="readonly"
 							value="${emp.idNumber}" name="idNumber" id="idNumber" required></td>
 					</tr>
 					<tr>
-						<td>姓名</td>
+						<td>姓名:</td>
 						<td><input type="text" pattern="^[\u4e00-\u9fff]{2,5}$"
 							placeholder="請輸入中文名字" title="請輸入有效的中文，長度2到5個字"
 							readonly="readonly" value="${emp.empName}" name="empName"
 							id="empName" required></td>
 					</tr>
 					<tr>
-						<td>性別</td>
+						<td>性別:</td>
 						<td style="text-align: center;"><input type="text"
 							placeholder="請輸入性別" readonly="readonly" name="gender"
 							value="${emp.gender}" required="required" id="" /> <select
@@ -57,33 +55,34 @@
 						</select>
 					</tr>
 					<tr>
-						<td>生日</td>
+						<td>生日:</td>
 						<td><input type="date" readonly="readonly"
 							value="${emp.birth}" name="birth" id="birthdate" required></td>
 					</tr>
 				<thead>
-					<th colspan="2">聯絡資料</th>
+					<th>聯絡資料</th>
+					<th></th>
 				</thead>
 				<tr>
-					<td>手機</td>
+					<td>手機:</td>
 					<td><input type="tel" pattern="[0-9]{10}"
 						placeholder="請輸入手機號碼" title="請輸入有效長度，-不需輸入" readonly="readonly"
 						value="${emp.contact.phone}" name="phone" required></td>
 				</tr>
 				<tr>
-					<td>電話</td>
-					<td><input type="tel" pattern="[0-9]{9,10}" placeholder="市話選填"
+					<td>電話:</td>
+					<td><input type="tel" pattern="[0-9]{10}" placeholder="市話選填"
 						title="請輸入有效長度，-不需輸入" readonly="readonly"
 						value="${emp.contact.tel}" name="tel"></td>
 				</tr>
 				<tr>
-					<td>地址</td>
+					<td>地址:</td>
 					<td><input type="text" pattern="^[\u4e00-\u9fff0-9]+$"
 						placeholder="請輸入地址" title="請輸入有效地址格式，僅限中文及數字" readonly="readonly"
 						value="${emp.contact.address}" name="address" required></td>
 				</tr>
 				<tr>
-					<td>信箱</td>
+					<td>信箱:</td>
 					<td><input type="email"
 						pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
 						placeholder="請輸入電子信箱" title="請輸入有效格式，例:a123@gmail.com"
@@ -95,29 +94,30 @@
 				<c:forEach items="${emp.emergencies}" var="emergency"
 					varStatus="loop">
 					<thead>
-						<th colspan="2">緊急連絡人</th>
+						<th>緊急連絡人</th>
+						<th></th>
 					</thead>
 					<tr>
-						<td colspan="2"><input type="hidden" readonly="readonly"
+						<td><input type="hidden" readonly="readonly"
 							value="${emergency.emergencyId}" name="emergencyId${loop.index}"
 							required></td>
 					</tr>
 					<tr>
-						<td>緊急聯絡人姓名</td>
+						<td>緊急聯絡人姓名:</td>
 						<td><input type="text" pattern="^[\u4e00-\u9fff]{2,5}$"
 							placeholder="請輸入中文名字" title="請輸入有效的中文，長度2到5個字"
 							readonly="readonly" value="${emergency.emergencyName}"
 							name="emergencyName${loop.index}" required></td>
 					</tr>
 					<tr>
-						<td>緊急聯絡人電話</td>
+						<td>緊急聯絡人電話:</td>
 						<td><input type="tel" pattern="[0-9]{10}"
 							placeholder="請輸入手機號碼" title="請輸入有效長度，-不需輸入" readonly="readonly"
 							value="${emergency.emergencyPhone}"
 							name="emergencyPhone${loop.index}" required></td>
 					</tr>
 					<tr>
-						<td>聯絡人關係</td>
+						<td>聯絡人關係:</td>
 						<td><input type="text" placeholder="請輸入與聯絡人關係"
 							readonly="readonly" value="${emergency.emergencyRelationship}"
 							name="emergencyRelationship${loop.index}" required></td>
