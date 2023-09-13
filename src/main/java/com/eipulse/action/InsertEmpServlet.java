@@ -11,6 +11,7 @@ import org.hibernate.SessionFactory;
 import com.eipulse.bean.Contact;
 import com.eipulse.bean.Emergency;
 import com.eipulse.bean.Employee;
+import com.eipulse.bean.Login;
 import com.eipulse.dao.EmpDao;
 
 import HibernateUtil.HibernateUtil;
@@ -64,6 +65,13 @@ public class InsertEmpServlet extends HttpServlet {
 		newemp.setContact(ct);
 		newemp.setEmergencies(emergencys);
 		Employee empout=empDao.insertEmp(newemp);
+	    String lastSixDigitsOfBirth = birth.substring(2, 4) + birth.substring(5, 7) + birth.substring(8, 10);
+	    String password = lastSixDigitsOfBirth; 
+	    Login newLogin = new Login();
+	    newLogin.setEmpId(empout.getEmpId()); 
+	    newLogin.setPassWord(password); 
+	    session.persist(newLogin);
+	    session.getTransaction().commit();
 		req.setAttribute("emp",empout);
         req.getRequestDispatcher("insertempsuccess.jsp").forward(req,resp);
     }
