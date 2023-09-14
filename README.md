@@ -57,4 +57,8 @@ Eclipse 2023-06 、MySQL 8.0.34
 更新日期：112/9/11
 更新事項：調整版面（select/insertsuccess/updatesuccess.jsp & css;index.jsp & css -版權聲明位置）
 
+分支名:xukai
+更新日期：112/9/14
+更新事項：employee.java和mysql員工資料庫增加jobage。
+
 
