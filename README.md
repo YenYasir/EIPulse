@@ -59,6 +59,6 @@ Eclipse 2023-06 、MySQL 8.0.34
 
 分支名:xukai
 更新日期：112/9/14
-更新事項：employee.java和mysql員工資料庫增加jobage。
+更新事項：employee.java和empsql員工資料庫增加jobage及員工狀態。
 
 
