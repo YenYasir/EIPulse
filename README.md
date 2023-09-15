@@ -61,4 +61,7 @@ Eclipse 2023-06 、MySQL 8.0.34
 更新日期：112/9/14
 更新事項：employee.java和empsql員工資料庫增加jobage及員工狀態。
 
+分支名:xukai
+更新日期：112/9/15
+更新事項：更改employee資料庫，將在職狀態合併在emp中並把年資移除。
 
