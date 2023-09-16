@@ -27,6 +27,12 @@
 		<mapping class="com.eipulse.bean.Permission"/>
 		<mapping class="com.eipulse.bean.EmployeePermission"/>
 		<mapping class="com.eipulse.bean.Title"/>
+		<mapping class="com.eipulse.bean.FormAuditEventLog"/>
+		<mapping class="com.eipulse.bean.FormEventLog"/>
+		<mapping class="com.eipulse.bean.FormRecord"/>
+		<mapping class="com.eipulse.bean.FormType"/>
+		<mapping class="com.eipulse.bean.LeaveTable"/>
+		<mapping class="com.eipulse.bean.OverTime"/>
 		
 	</session-factory>
 </hibernate-configuration>

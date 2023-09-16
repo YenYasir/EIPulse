@@ -28,8 +28,8 @@ public class Permission {
 //        joinColumns = {@JoinColumn(name = "permissionid")},
 //        inverseJoinColumns = {@JoinColumn(name = "empid")})
 //    private List<Employee> employees;
-	@OneToMany(fetch = FetchType.LAZY)
-	private List<EmployeePermission> employeePermission;
+//	@OneToMany(fetch = FetchType.LAZY)
+//	private List<EmployeePermission> employeePermission;
 
 	public int getPermissionId() {
 		return permissionId;
@@ -55,13 +55,6 @@ public class Permission {
 		this.info = info;
 	}
 
-	public List<EmployeePermission> getEmployeePermission() {
-		return employeePermission;
-	}
-
-	public void setEmployeePermission(List<EmployeePermission> employeePermission) {
-		this.employeePermission = employeePermission;
-	}
 
 	public Permission() {
 	}

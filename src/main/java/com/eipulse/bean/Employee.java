@@ -45,6 +45,10 @@ public class Employee {
     private EmployeeInfo employeeInfo;
     @OneToOne(fetch = FetchType.LAZY,mappedBy = "employee", cascade = CascadeType.ALL)
 	private Contact contact;
+    @OneToOne(fetch = FetchType.LAZY,mappedBy = "employee", cascade = CascadeType.ALL)
+	private FormRecord formRecord;
+    @OneToOne(fetch = FetchType.LAZY,mappedBy = "employee", cascade = CascadeType.ALL)
+	private FormAuditEventLog formAuditEventLog;
 
 		public Employee(int empId, String idNumber, String empName, String gender, String birth, byte[] photo) {
 		super();
@@ -159,6 +163,22 @@ public class Employee {
 
 		public void setLogin(Login login) {
 			this.login = login;
+		}
+
+		public FormRecord getFormRecord() {
+			return formRecord;
+		}
+
+		public void setFormRecord(FormRecord formRecord) {
+			this.formRecord = formRecord;
+		}
+
+		public FormAuditEventLog getFormAuditEventLog() {
+			return formAuditEventLog;
+		}
+
+		public void setFormAuditEventLog(FormAuditEventLog formAuditEventLog) {
+			this.formAuditEventLog = formAuditEventLog;
 		}
 
 		public Employee() {

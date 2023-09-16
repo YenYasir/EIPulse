@@ -16,26 +16,11 @@ import jakarta.persistence.Table;
 @Table(name = "Title")
 public class Title {
 	@Id
-    @Column(name="TitleId")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int titleId;
-    @Column(name="TitleName")
-    private String titleName;
-    @OneToMany(fetch = FetchType.LAZY,mappedBy = "title", cascade = CascadeType.ALL)
-	private List<EmployeeInfo> employeeInfo;
-    
-	public Title(int titleId, String titleName, List<EmployeeInfo> employeeInfo) {
-		super();
-		this.titleId = titleId;
-		this.titleName = titleName;
-		this.employeeInfo = employeeInfo;
-	}
-
-	public Title(String titleName, List<EmployeeInfo> employeeInfo) {
-		super();
-		this.titleName = titleName;
-		this.employeeInfo = employeeInfo;
-	}
+	@Column(name = "TitleId")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int titleId;
+	@Column(name = "TitleName")
+	private String titleName;
 
 	public int getTitleId() {
 		return titleId;
@@ -51,14 +36,6 @@ public class Title {
 
 	public void setTitleName(String titleName) {
 		this.titleName = titleName;
-	}
-
-	public List<EmployeeInfo> getEmployeeInfo() {
-		return employeeInfo;
-	}
-
-	public void setEmployeeInfo(List<EmployeeInfo> employeeInfo) {
-		this.employeeInfo = employeeInfo;
 	}
 
 	public Title() {
