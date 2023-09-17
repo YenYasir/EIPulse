@@ -61,8 +61,15 @@ if (session.getAttribute("EmpId") == null) {
 				</ul></li>
 
 
-			<li><a href=""><img class="function" src="img/formtable.png" />表單申請</a></li>
-
+			<li><a href=""><img class="function" src="img/formtable.png" />表單申請</a>
+				<ui>
+				<li><a href="javascript:void(0)" id="CheckFormStatus">查看表單狀態</a></li>
+				<li><a href="javascript:void(0)" id="FillOutForms">寫表單</a></li>
+				<li><a href="javascript:void(0)" id="ReviewForms">批審表單</a></li>
+				
+				</ui>
+			</li>
+				
 
 			<li><a href=""><img class="function" src="img/meeting.png" />會議預約</a></li>
 
@@ -107,6 +114,37 @@ if (session.getAttribute("EmpId") == null) {
 							function() {
 								document.querySelector(".iframe1").style.display = "block";
 								document.querySelector("iframe").src = "permissionEmp"
+							});
+		};
+		
+		if (document.getElementById("CheckFormStatus") != null) {
+			document
+					.getElementById('CheckFormStatus')
+					.addEventListener(
+							'click',
+							function() {
+								document.querySelector(".iframe1").style.display = "block";
+								document.querySelector("iframe").src = "selectmyform"
+							});
+		};
+		if (document.getElementById("FillOutForms") != null) {
+			document
+					.getElementById('FillOutForms')
+					.addEventListener(
+							'click',
+							function() {
+								document.querySelector(".iframe1").style.display = "block";
+								document.querySelector("iframe").src = "fillOutForms"
+							});
+		};
+		if (document.getElementById("ReviewForms") != null) {
+			document
+					.getElementById('ReviewForms')
+					.addEventListener(
+							'click',
+							function() {
+								document.querySelector(".iframe1").style.display = "block";
+								document.querySelector("iframe").src = "reviewForms"
 							});
 		};
 	</script>

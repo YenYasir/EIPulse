@@ -39,7 +39,6 @@ public class PermissionEmp extends HttpServlet {
 		query.setParameter(1, emp.getEmployeeInfo().getDeptId());
 		query.setParameter(2, emp.getEmpId());
 		query.setParameter(3, emp.getEmployeeInfo().getTitleId());
-		System.out.println(123);
 		List<Employee> emps = new ArrayList<>();
 		for(EmployeeInfo e : query.list())
 			emps.add(e.getEmployee());

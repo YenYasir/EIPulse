@@ -33,6 +33,7 @@
 		<mapping class="com.eipulse.bean.FormType"/>
 		<mapping class="com.eipulse.bean.LeaveTable"/>
 		<mapping class="com.eipulse.bean.OverTime"/>
+		<mapping class="com.eipulse.bean.NotificationField"/>
 		
 	</session-factory>
 </hibernate-configuration>

@@ -45,11 +45,13 @@ public class Employee {
     private EmployeeInfo employeeInfo;
     @OneToOne(fetch = FetchType.LAZY,mappedBy = "employee", cascade = CascadeType.ALL)
 	private Contact contact;
-    @OneToOne(fetch = FetchType.LAZY,mappedBy = "employee", cascade = CascadeType.ALL)
-	private FormRecord formRecord;
-    @OneToOne(fetch = FetchType.LAZY,mappedBy = "employee", cascade = CascadeType.ALL)
-	private FormAuditEventLog formAuditEventLog;
-
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "employee", cascade = CascadeType.ALL)
+	private List<FormRecord> formRecord;
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "employee", cascade = CascadeType.ALL)
+	private List<FormAuditEventLog> formAuditEventLog;
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "employee", cascade = CascadeType.ALL)
+	private List<NotificationField> notificationField;
+    
 		public Employee(int empId, String idNumber, String empName, String gender, String birth, byte[] photo) {
 		super();
 		this.empId = empId;
@@ -165,20 +167,28 @@ public class Employee {
 			this.login = login;
 		}
 
-		public FormRecord getFormRecord() {
+		public List<FormRecord> getFormRecord() {
 			return formRecord;
 		}
 
-		public void setFormRecord(FormRecord formRecord) {
+		public void setFormRecord(List<FormRecord> formRecord) {
 			this.formRecord = formRecord;
 		}
 
-		public FormAuditEventLog getFormAuditEventLog() {
+		public List<FormAuditEventLog> getFormAuditEventLog() {
 			return formAuditEventLog;
 		}
 
-		public void setFormAuditEventLog(FormAuditEventLog formAuditEventLog) {
+		public void setFormAuditEventLog(List<FormAuditEventLog> formAuditEventLog) {
 			this.formAuditEventLog = formAuditEventLog;
+		}
+
+		public List<NotificationField> getNotificationField() {
+			return notificationField;
+		}
+
+		public void setNotificationField(List<NotificationField> notificationField) {
+			this.notificationField = notificationField;
 		}
 
 		public Employee() {
