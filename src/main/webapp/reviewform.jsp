@@ -15,7 +15,7 @@
 </tr>
 <c:forEach items="${reviews}" var="review" varStatus="s">
 <tr>
-<td><a href="">${s.count}</a></td>
+<td><a href="formCheck?formId=${review.formRecord.formId}">${s.count}</a></td>
 <td>${review.formRecord.empId}</td>
 <td>${review.formRecord.formType.typeName}</td>
 </tr>

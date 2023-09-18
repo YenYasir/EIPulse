@@ -66,9 +66,7 @@ public class Leave extends HttpServlet {
         list1.add(fel);
         form.setFormAuditEventLog(list);
         form.setFormEventLog(list1);
-        LeaveTable leave = new LeaveTable();
-        leave.setTextle(text);
-        leave.setFormRecord(form);
+        leaveTable.setFormRecord(form);
         form.setLeaveTable(leaveTable);
         session.persist(form);
         notification.setCreatedAt(String.valueOf(LocalDateTime.now()));
